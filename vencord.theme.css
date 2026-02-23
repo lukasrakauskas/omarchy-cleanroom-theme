@@ -1,0 +1,149 @@
+/**
+ * @name GitHub Light
+ * @author based on Hyzeta.vscode-theme-github-light
+ * @version 1.0.0
+ * @description GitHub Light theme for Vesktop/Vencord
+ * @source https://github.com/yunlingz/vscode-theme-github-light
+ **/
+
+:root {
+    --color00: #ffffff;
+    --color01: #f6f8fa;
+    --color02: #f0f0f0;
+    --color03: #6a737d;
+    --color04: #000000;
+    --color05: #000000;
+    --color06: #000000;
+    --color07: #000000;
+    --color08: #d73a49;
+    --color09: #e36209;
+    --color0A: #735c0f;
+    --color0B: #22863a;
+    --color0C: #032f62;
+    --color0D: #005cc5;
+    --color0E: #6f42c1;
+    --color0F: #b31d28;
+}
+
+:root {
+    --base00: var(--color00);
+    --base01: #f6f8fa;
+    --base02: #f0f0f0;
+    --base03: #6a737d;
+    --base04: #000000;
+    --base05: #000000;
+    --base06: #000000;
+    --base07: #000000;
+    --base08: #d73a49;
+    --base09: #e36209;
+    --base0A: #735c0f;
+    --base0B: #22863a;
+    --base0C: #032f62;
+    --base0D: #005cc5;
+    --base0E: #6f42c1;
+    --base0F: #b31d28;
+}
+
+.theme-light,
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+    --background-accent: var(--base02) !important;
+    --background-floating: var(--base01) !important;
+    --background-mentioned-hover: var(--base02) !important;
+    --background-mentioned: var(--base01) !important;
+    --background-message-highlight: var(--base01) !important;
+    --background-message-hover: var(--base01) !important;
+    --background-mod-strong: var(--base02) !important;
+    --background-modifier-accent: var(--base02) !important;
+    --background-modifier-active: var(--base02) !important;
+    --background-modifier-hover: var(--base01) !important;
+    --background-modifier-selected: var(--base01) !important;
+    --background-primary: var(--base01) !important;
+    --background-secondary-alt: var(--base01) !important;
+    --background-secondary: var(--base00) !important;
+    --background-surface-highest: var(--base02) !important;
+    --background-surface-higher: var(--base02) !important;
+    --background-surface-high: var(--base02) !important;
+    --background-tertiary: var(--base00) !important;
+    --background-code: var(--base02) !important;
+    --bg-base-secondary: var(--base00) !important;
+    --bg-base-tertiary: var(--base00) !important;
+    --bg-brand: var(--base03) !important;
+    --bg-mod-faint: var(--base01) !important;
+    --bg-overlay-2: var(--base01) !important;
+    --bg-surface-raised: var(--base02) !important;
+    --bg-surface-overlay: var(--base00) !important;
+    --black: var(--base00) !important;
+    --brand-500: var(--base0D) !important;
+    --brand-560: var(--base01) !important;
+    --button-danger-background: var(--base08) !important;
+    --button-filled-brand-background: var(--base0D) !important;
+    --button-filled-brand-background-hover: var(--base03) !important;
+    --button-filled-brand-text: var(--base00) !important;
+    --button-positive-background: var(--base0B) !important;
+    --button-secondary-background: var(--base02) !important;
+    --button-secondary-background-hover: var(--base03) !important;
+    --card-primary-bg: var(--base02) !important;
+    --card-background-default: var(--base02) !important;
+    --channel-icon: var(--base03) !important;
+    --channels-default: var(--base03) !important;
+    --channeltextarea-background: var(--base01) !important;
+    --chat-background-default: var(--base01) !important;
+    --chat-text-muted: var(--base03) !important;
+    --checkbox-background-checked: var(--base0D) !important;
+    --deprecated-text-input-bg: var(--base01) !important;
+    --deprecated-text-input-border: var(--base02) !important;
+    --green-300: var(--base0B) !important;
+    --header-primary: var(--base04) !important;
+    --header-secondary: var(--base03) !important;
+    --home-background: var(--base00) !important;
+    --info-warning-foreground: var(--base0A) !important;
+    --input-background: var(--base02) !important;
+    --input-border: var(--base03) !important;
+    --input-placeholder-text: var(--base03) !important;
+    --interactive-active: var(--base05) !important;
+    --interactive-hover: var(--base05) !important;
+    --interactive-muted: var(--base03) !important;
+    --interactive-normal: var(--base05) !important;
+    --mention-background: var(--base02) !important;
+    --mention-foreground: var(--base0D) !important;
+    --menu-item-default-hover-bg: var(--base02) !important;
+    --message-reacted-background: var(--base02) !important;
+    --modal-background: var(--base01) !important;
+    --modal-footer-background: var(--base00) !important;
+    --notice-background-positive: var(--base0B) !important;
+    --notice-background-warning: var(--base0A) !important;
+    --notice-background-negative: var(--base08) !important;
+    --notice-text-positive: var(--base00) !important;
+    --notice-text-warning: var(--base00) !important;
+    --notice-text-negative: var(--base00) !important;
+    --scrollbar-auto-thumb: var(--base03) !important;
+    --scrollbar-thin-thumb: var(--base03) !important;
+    --search-popout-option-fade: none;
+    --status-danger-background: var(--base08) !important;
+    --status-positive-background: var(--base0B) !important;
+    --status-warning-background: var(--base03) !important;
+    --text-brand: var(--base0D) !important;
+    --text-default: var(--base05) !important;
+    --text-feedback-positive: var(--base0B) !important;
+    --text-feedback-negative: var(--base08) !important;
+    --text-feedback-warning: var(--base09) !important;
+    --text-link: var(--base0D) !important;
+    --text-muted: var(--base03) !important;
+    --text-negative: var(--base08) !important;
+    --text-normal: var(--base05) !important;
+    --text-positive: var(--base0B) !important;
+    --text-primary: var(--base05) !important;
+    --text-secondary: var(--base03) !important;
+    --text-tertiary: var(--base03) !important;
+    --text-warning: var(--base09) !important;
+    --white: var(--base05) !important;
+    --yellow-300: var(--base0A) !important;
+}
+
+::selection {
+    background: var(--base0D) !important;
+    color: var(--base00) !important;
+}
