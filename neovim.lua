@@ -1,19 +1,13 @@
 return {
 	{
-		"projekt0n/github-nvim-theme",
+		dir = vim.fn.stdpath("data") .. "/lazy/github-theme",
 		name = "github-theme",
 		priority = 1000,
-		opts = {
-			theme = {
-				light = "github_light",
-				dark = "github_dark",
-			},
-		},
 	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "github-light",
+			colorscheme = "github_light",
 		},
 	},
 }

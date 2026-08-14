@@ -1,15 +1,42 @@
 # GitHub Light Theme Colors
 # Based on https://github.com/yunlingz/vscode-theme-github-light
 
-# Core colors
+mode = "light"
+
 accent = "#005cc5"
-cursor = "#d73a49"
-foreground = "#000000"
+selection = "#fed442"
+muted = "#6a737d"
+
 background = "#ffffff"
+dark_background = "#f6f8fa"
+darker_background = "#f0f0f0"
+lighter_background = "#f6f8fa"
+
+foreground = "#000000"
+dark_foreground = "#6a737d"
+light_foreground = "#000000"
+bright_foreground = "#000000"
+
+red = "#d73a49"
+yellow = "#e36209"
+orange = "#e36209"
+green = "#22863a"
+cyan = "#032f62"
+blue = "#005cc5"
+magenta = "#6f42c1"
+brown = "#735c0f"
+
+bright_red = "#d73a49"
+bright_yellow = "#e36209"
+bright_green = "#22863a"
+bright_cyan = "#032f62"
+bright_blue = "#005cc5"
+bright_magenta = "#6f42c1"
+
 selection_foreground = "#000000"
 selection_background = "#fed442"
 
-# Terminal palette (base16)
+# Legacy ANSI aliases retained for Omarchy 3 hooks and third-party consumers.
 color0 = "#6a737d"
 color1 = "#d73a49"
 color2 = "#22863a"
@@ -26,23 +53,3 @@ color12 = "#005cc5"
 color13 = "#6f42c1"
 color14 = "#032f62"
 color15 = "#000000"
-
-# Hook variable aliases
-primary_background = "ffffff"
-primary_foreground = "000000"
-normal_black = "6a737d"
-bright_black = "959da5"
-normal_white = "000000"
-bright_white = "000000"
-normal_red = "d73a49"
-bright_red = "d73a49"
-normal_yellow = "e36209"
-bright_yellow = "e36209"
-normal_green = "22863a"
-bright_green = "22863a"
-normal_cyan = "032f62"
-bright_cyan = "032f62"
-normal_blue = "005cc5"
-bright_blue = "005cc5"
-normal_magenta = "6f42c1"
-bright_magenta = "6f42c1"
