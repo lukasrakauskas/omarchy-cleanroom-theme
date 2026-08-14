@@ -6,8 +6,6 @@ Cleanroom keeps the desktop deliberately spare: a white canvas, soft gray
 surfaces, crisp black text, and a small set of GitHub's familiar accents. It
 is built for Omarchy v4 and Quickshell.
 
-![Cleanroom preview](preview.png)
-
 ## Palette
 
 | Role           | Color     |
@@ -26,14 +24,23 @@ is built for Omarchy v4 and Quickshell.
 
 ## Install
 
-Place the theme in `~/.config/omarchy/themes/cleanroom`, then apply it:
+Via the Omarchy menu: Install > Style > Theme (Super + Alt + Space) and paste
+this repo URL:
+
+https://github.com/lukasrakauskas/omarchy-cleanroom-theme
+
+Or from the terminal:
 
 ```bash
-omarchy theme set cleanroom
+omarchy theme install https://github.com/lukasrakauskas/omarchy-cleanroom-theme
 ```
 
 The theme includes Quickshell colors, terminal palettes, btop, Chromium,
 Firefox, VS Code, and Neovim integration.
+
+## Screenshot
+
+![Cleanroom preview](preview.png)
 
 ## Credits
 
