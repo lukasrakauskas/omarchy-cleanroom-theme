@@ -17,39 +17,41 @@ dark_foreground = "#6a737d"
 light_foreground = "#000000"
 bright_foreground = "#000000"
 
+# Omarchy 4.5 feeds these slots into Aether. Assign GitHub Light colors
+# by syntax role rather than literal slot name; keep the UI accent above blue.
 red = "#d73a49"
-yellow = "#e36209"
-orange = "#e36209"
-green = "#22863a"
-cyan = "#032f62"
-blue = "#005cc5"
+yellow = "#e36209"          # Types; also orange warnings in generated apps
+orange = "#005cc5"          # Numbers, booleans, active line number and match
+green = "#032f62"          # Strings
+cyan = "#005cc5"            # Built-ins, members and parameters
+blue = "#6f42c1"            # Functions (also legacy statements and imports)
 magenta = "#6f42c1"
 brown = "#735c0f"
 
 bright_red = "#d73a49"
-bright_yellow = "#e36209"
+bright_yellow = "#005cc5"   # Constants; also shell-mode borders
 bright_green = "#22863a"
-bright_cyan = "#032f62"
+bright_cyan = "#005cc5"     # Identifiers and properties
 bright_blue = "#005cc5"
-bright_magenta = "#6f42c1"
+bright_magenta = "#d73a49"  # Keywords, conditionals and loops
 
 selection_foreground = "#000000"
 selection_background = "#fed442"
 
 # Legacy ANSI aliases retained for Omarchy 3 hooks and third-party consumers.
-color0 = "#6a737d"
+color0 = "#ffffff"
 color1 = "#d73a49"
-color2 = "#22863a"
+color2 = "#032f62"
 color3 = "#e36209"
-color4 = "#005cc5"
+color4 = "#6f42c1"
 color5 = "#6f42c1"
-color6 = "#032f62"
+color6 = "#005cc5"
 color7 = "#000000"
-color8 = "#959da5"
+color8 = "#6a737d"
 color9 = "#d73a49"
 color10 = "#22863a"
-color11 = "#e36209"
+color11 = "#005cc5"
 color12 = "#005cc5"
-color13 = "#6f42c1"
-color14 = "#032f62"
+color13 = "#d73a49"
+color14 = "#005cc5"
 color15 = "#000000"
