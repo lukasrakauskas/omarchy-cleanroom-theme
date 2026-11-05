@@ -42,7 +42,7 @@ Chromium, Firefox, VS Code, and Neovim integration.
 
 Omarchy 4.5 generates the Neovim theme with Aether v3 from `colors.toml`.
 Cleanroom tunes those palette slots for GitHub Light syntax: purple functions,
-red keywords, dark-blue strings, blue numbers and constants, and gray comments.
+red keywords, green strings, blue numbers and constants, and gray comments.
 The canvas stays white with black text. Active line numbers and matching
 brackets use the blue accent instead of orange.
 
@@ -52,9 +52,10 @@ Search highlighting is separate: ordinary matches have a pale purple background
 background. Changing these independently needs a local Neovim highlight override.
 
 This is a palette-based approximation, not the `github_light` colorscheme.
-Aether shares some slots: legacy statements and imports use the function color,
-and some built-ins and parameters share blue. Styles and plugin highlights also
-differ. No extra Neovim plugin or local configuration is required.
+Strings stay green to keep Cleanroom's previous color balance and preserve green
+Git additions and success indicators. Aether shares some slots: legacy statements
+and imports use the function color, and some built-ins and parameters share blue.
+Styles and plugin highlights also differ. No extra Neovim plugin or local configuration is required.
 
 Omarchy ignores Lua and terminal configuration files from Git-installed themes.
 Cleanroom therefore lets Omarchy generate them rather than shipping an unused

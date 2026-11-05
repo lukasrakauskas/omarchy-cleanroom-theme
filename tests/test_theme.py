@@ -55,7 +55,7 @@ local ok, err = xpcall(function()
   local result = { colorscheme = vim.g.colors_name, highlights = {} }
   for _, name in ipairs({"Normal", "Comment", "Function", "@keyword", "String",
       "Number", "Constant", "CursorLineNr", "MatchParen", "Visual", "VisualNOS",
-      "Search", "IncSearch", "CurSearch"}) do
+      "Search", "IncSearch", "CurSearch", "Character", "GitSignsAdd", "healthSuccess"}) do
     result.highlights[name] = vim.api.nvim_get_hl(0, {name = name, link = false})
   end
   vim.fn.writefile({vim.json.encode(result)}, vim.env.CLEANROOM_OUTPUT)
@@ -75,12 +75,21 @@ vim.cmd.qa()
 
     def test_github_light_syntax(self):
         # Catches palette assignments that leave Aether's stock syntax colors in place.
-        expected = {"Function": "#6f42c1", "@keyword": "#d73a49", "String": "#032f62",
+        expected = {"Function": "#6f42c1", "@keyword": "#d73a49", "String": "#22863a",
                     "Number": "#005cc5", "Constant": "#005cc5", "Comment": "#6a737d"}
         self.assertEqual(self.nvim["colorscheme"], "aether")
         for group, color in expected.items():
             with self.subTest(group=group):
                 self.assertEqual(self.nvim["highlights"][group]["fg"], int(color[1:], 16))
+
+    def test_green_status_highlights(self):
+        for group in ("Character", "GitSignsAdd", "healthSuccess"):
+            with self.subTest(group=group):
+                self.assertEqual(self.nvim["highlights"][group]["fg"], 0x22863A)
+        pi = json.loads((self.theme / "pi.json").read_text())
+        self.assertEqual(pi["vars"][pi["colors"]["success"]], "#22863a")
+        claude = json.loads((self.theme / "claude.json").read_text())
+        self.assertEqual(claude["overrides"]["success"], "#22863a")
 
     def test_blue_active_controls(self):
         for group in ("CursorLineNr", "MatchParen"):

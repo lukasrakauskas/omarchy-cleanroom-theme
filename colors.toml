@@ -22,7 +22,7 @@ bright_foreground = "#000000"
 red = "#d73a49"
 yellow = "#e36209"          # Types; also orange warnings in generated apps
 orange = "#005cc5"          # Numbers, booleans, active line number and match
-green = "#032f62"          # Strings
+green = "#22863a"           # Strings, Git additions and success indicators
 cyan = "#005cc5"            # Built-ins, members and parameters
 blue = "#6f42c1"            # Functions (also legacy statements and imports)
 magenta = "#6f42c1"
@@ -41,7 +41,7 @@ selection_background = "#fed442"
 # Legacy ANSI aliases retained for Omarchy 3 hooks and third-party consumers.
 color0 = "#ffffff"
 color1 = "#d73a49"
-color2 = "#032f62"
+color2 = "#22863a"
 color3 = "#e36209"
 color4 = "#6f42c1"
 color5 = "#6f42c1"
